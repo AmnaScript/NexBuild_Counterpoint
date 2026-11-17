@@ -1,0 +1,18 @@
+{
+  "name": "counterpoint-retail",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NexBuild Project 02 \u2014 inventory and order management",
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "node --watch server/app.js",
+    "test": "node --test tests/*.test.js",
+    "build": "tsc -p client/tsconfig.json",
+    "check": "npm run build && npm test",
+    "reset": "node scripts/reset-db.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "license": "UNLICENSED"
+}
